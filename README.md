@@ -187,4 +187,160 @@ else:
             print(c)
         else:
             print("No second max")
+ #Triangle Angle Validation
+ A = int(input())
+B = int(input())
+C = int(input())
+if A + B + C == 180 and A > 0 and B > 0 and C > 0 :
+    print("VALID")
+    if A == B == C:
+      print("EQUILATERAL")
+    elif A == B or B == C or A == C:
+      print("ISOSCELES")
+    else:
+      print("SCALENE")
+else:
+   print("NOT VALID")
+#Number to Word
+n=int(input())
+match n:
+  case 0:
+    print("zero")
+  case 1:
+    print("one")
+  case 2:
+    print("two")
+  case 3:
+    print("three")
+  case 4:
+    print("four")
+  case 5:
+    print("five")
+  case 6:
+    print("six")
+  case 7:
+    print("seven")
+  case 8:
+    print("eight")
+  case 9:
+    print("nine")
+  case _:
+    print("invalid")
+  #Vowel or Consonant
+  ch = input().lower()
+match ch:
+    case 'a' | 'e' | 'i' | 'o' | 'u':
+        print("vowel")
+    case _:
+        print("consonant")
+ #Leap Year Checker
+ n= int(input())
+if year % 400 == 0:
+    print("yes")
+elif year % 100 == 0:
+    print("no")
+elif year % 4 == 0:
+    print("yes")
+else:
+    print("no")
+#Fun Grade Calculator
+a=int(input())
+b=int(input())
+c=int(input())
+d=int(input())
+e=int(input())
+total=a+b+c+d+e
+Average=total/5
+if Average >= 90:
+  print("Excellent!")
+elif Average >= 80 and  Average < 90:
+  print("Great Job!")
+elif Average >= 70 and  Average < 80:
+  print("Good Effort!")
+elif Average >= 50 and  Average <70:
+  print("Keep Trying!")
+else:  
+  print("Better Luck Next Time!")
+  #Train Berth Type Finder
+  seat=int(input())
+seatnumber=seat%8
+match seatnumber:
+  case 1:
+    print("LB")
+  case 2:
+    print("MB")
+  case 3:
+    print("UB")
+  case 4:
+    print("LB")
+  case 5:
+    print("MB")
+  case 6:
+    print("UB")
+  case 7:
+    print("SL")  
+  case 0:
+    print("SU")  
+  case _:
+    print("INVALID")
+#Electricity Bill Calculator
+  units=float(input())
+amount=0.0
+if units>=0 and units<=50:
+   amount=units*1
+elif units>=51 and units<=150:
+   amount=50+(units-50)*2
+elif units>=151 and units<=250:
+   amount=50+200+(units-150)*3
+else:
+  amount=50+200+300+(units-250)*4
+if amount>150:
+  print(int(amount*0.2+amount))
+else:
+  print(int(amount))
+  #Thala vs Thalapathy Game
+  n = int(input())
+if n % 3 == 0 and n % 5 == 0:
+    print("ThalaThalapathy")
+elif n % 3 == 0:
+    print("Thala")
+elif n % 5 == 0:
+    print("Thalapathy")
+else:
+    print(n)
+#Train Fare Calculator
+age = int(input())
+distance = int(input())
+fare = distance * 5
+if age < 12:
+    fare = fare * 0.5
+elif age <= 59:
+    fare = fare
+else:
+    fare = fare * 0.75
+print(int(fare))
+#Average Marks Calculator
+a=int(input())
+b=int(input())
+c=int(input())
+d=int(input())
+e=int(input())
+avg = (a + b + c + d + e) / 5
+if avg == int(avg):
+    print(int(avg))
+else:
+    print(f"{avg:.2f}")
+#Fun Character Case Converter
+ch = input()
+if ch.islower():
+    print(ch.upper())
+elif ch.isupper():
+    print(ch.lower())
+else:
+    print("abcd theriyatha?")
+    
+
             
+            
+            
+

@@ -446,6 +446,128 @@ if sum==n:
   print("Perfect")
 else:
   print("Not Perfect")
+#Length of a string
+str=input()
+print(len(str))
+#Join the strings
+str1=input()
+str2=input()
+print(str1 + " " +str2)
+#Compare the Strings
+str=input()
+str1=input()
+if str == str1:
+  print("true")
+else:
+  print("false")
+#First character of a string
+str=input()
+print(str[0])
+#Last character of a string
+str=input()
+print(str[-1])
+#Join first & last characters of a string
+str=input()
+print(str[0] + str[-1])
+#Alphanumeric strings
+s=input()
+numcount=alphacount=False
+for i in s:
+  if i.isalpha():
+    alphacount=True
+  elif i.isdigit():
+    numcount=True
+  if alphacount and numcount:
+   break
+if alphacount and numcount:
+  print("true")
+else:
+  print("false")
+#uppercase check 
+str=input()
+if str.isupper():
+  print("true")
+else:
+  print("false")
+#lowercase check
+str=input()
+if str.islower():
+  print("true")
+else:
+  print("false")
+#String lengths equal or not
+str=input()
+str1=input()
+if len(str) == len(str1):
+  print("true")
+else:
+  print("false")
+#Reverse a string
+str=input()
+print(str[::-1])
+#Split strings by comma
+s=input()
+for i in s.split(","):
+  print(i)
+#Remove vowels
+s=input()
+vow="aeiouAEIOU"
+for char in s:
+  if char in vow:
+    s=s.replace(char,"")
+print(s)  
+#Reverse the character case
+s=input()
+print(s.swapcase())
+#Print ascii value
+s=input()
+print(ord(s))
+#Remove occurrences of a char
+string=input()
+char=input()
+print(string.replace(char,""))
+#Search for a word
+s=input()
+char=input()
+print("true" if char in s else "false")
+#Count vowels and consonants
+s=input()
+vowelcount=0
+concount=0
+for i in s:
+  if i in "aeiouAEIOU":
+    vowelcount+=1
+  else:
+    concount+=1
+print(vowelcount)    
+print(concount)
+#Anagram check
+s1=input().lower().replace(" ","")
+s2=input().lower().replace(" ","")
+if(len(s1)!=len(s2)):
+  print("false")
+elif sorted(s1)==sorted(s2):
+  print("true")
+else:
+  print("false")
+#Palindrome check
+s=input()
+if s==s[::-1]:
+  print("true")
+else :
+  print("false")
+#Print Array Elements
+n=int(input())
+arr=list(map(int,input().split()))
+for i in range(n):
+  print(arr[i],end=" ")
+ #Sum of Array Elements
+ n=int(input())
+arr=list(map(int,input().split()))
+print(sum(arr))
+
+    
+  
 
 
     
